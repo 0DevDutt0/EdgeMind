@@ -1,0 +1,55 @@
+{
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "baseline_perplexity": 8.42,
+  "baseline_tps": 178.3,
+  "baseline_size_gb": 14.5,
+  "recommended_method": "gptq_4bit",
+  "recommended_method_reason": "GPTQ 4-bit achieves 94.9% quality retention at 3.54x compression with minimal speed penalty vs INT4 NF4. Best quality/size tradeoff for the RTX 5090.",
+  "comparison_table": [
+    {
+      "method": "bf16",
+      "size_gb": 14.5,
+      "perplexity": 8.42,
+      "tps": 178.3,
+      "quality_retention_pct": 100.0,
+      "compression_ratio": 1.0,
+      "fits_rtx5090": true
+    },
+    {
+      "method": "int8",
+      "size_gb": 7.3,
+      "perplexity": 8.71,
+      "tps": 161.4,
+      "quality_retention_pct": 97.0,
+      "compression_ratio": 1.99,
+      "fits_rtx5090": true
+    },
+    {
+      "method": "gptq_4bit",
+      "size_gb": 4.1,
+      "perplexity": 8.87,
+      "tps": 148.2,
+      "quality_retention_pct": 94.9,
+      "compression_ratio": 3.54,
+      "fits_rtx5090": true
+    },
+    {
+      "method": "gguf_q4_k_m",
+      "size_gb": 4.7,
+      "perplexity": 9.04,
+      "tps": 134.6,
+      "quality_retention_pct": 91.9,
+      "compression_ratio": 3.09,
+      "fits_rtx5090": true
+    },
+    {
+      "method": "int4_nf4",
+      "size_gb": 4.2,
+      "perplexity": 9.23,
+      "tps": 156.7,
+      "quality_retention_pct": 90.0,
+      "compression_ratio": 3.45,
+      "fits_rtx5090": true
+    }
+  ]
+}

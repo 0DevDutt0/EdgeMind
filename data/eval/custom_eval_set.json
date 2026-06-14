@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "category": "explanation",
+    "prompt": "Explain how transformer attention mechanisms work in simple terms, using an analogy a non-technical person could understand:"
+  },
+  {
+    "id": 2,
+    "category": "explanation",
+    "prompt": "Explain the difference between model quantization and model pruning, and when you would use each:"
+  },
+  {
+    "id": 3,
+    "category": "explanation",
+    "prompt": "Explain what VRAM is, why it matters for running LLMs, and why a 7B model at BF16 needs 14GB of VRAM:"
+  },
+  {
+    "id": 4,
+    "category": "explanation",
+    "prompt": "Explain how backpropagation works in neural networks, step by step, as if explaining to a computer science undergraduate:"
+  },
+  {
+    "id": 5,
+    "category": "coding",
+    "prompt": "Write a Python function that implements binary search on a sorted list. Include type hints, docstring, and handle edge cases:"
+  },
+  {
+    "id": 6,
+    "category": "coding",
+    "prompt": "Write a Python class that implements a simple LRU cache with a fixed capacity using only built-in data structures:"
+  },
+  {
+    "id": 7,
+    "category": "coding",
+    "prompt": "Write a Python function that takes a list of benchmark JSON files and returns a pandas DataFrame with columns for model, method, perplexity, and TPS:"
+  },
+  {
+    "id": 8,
+    "category": "coding",
+    "prompt": "Write a Python async function that makes 10 parallel API requests to different URLs and returns all responses, handling timeouts and errors gracefully:"
+  },
+  {
+    "id": 9,
+    "category": "reasoning",
+    "prompt": "A train leaves City A at 9am traveling at 60 mph toward City B. Another train leaves City B at 10am traveling toward City A at 80 mph. The cities are 280 miles apart. At what time do the trains meet?"
+  },
+  {
+    "id": 10,
+    "category": "reasoning",
+    "prompt": "You have a 3-gallon jug and a 5-gallon jug, and a water source. How do you measure exactly 4 gallons? Show your steps:"
+  },
+  {
+    "id": 11,
+    "category": "reasoning",
+    "prompt": "If every 7B LLM at BF16 takes 14GB of VRAM, and you have a GPU with 24GB, how many 7B models could you run simultaneously at INT4 (which uses ~4.5GB each)? Show your reasoning:"
+  },
+  {
+    "id": 12,
+    "category": "reasoning",
+    "prompt": "A company claims their new quantization method reduces model size by 80% with only 2% quality loss. What questions would you ask to validate this claim, and what experiments would you run?"
+  },
+  {
+    "id": 13,
+    "category": "factual",
+    "prompt": "What are the key architectural differences between BERT (encoder-only) and GPT (decoder-only) transformer models, and what tasks is each best suited for?"
+  },
+  {
+    "id": 14,
+    "category": "factual",
+    "prompt": "What is GGUF format, why was it created to replace GGML, and what are its main advantages for edge LLM deployment?"
+  },
+  {
+    "id": 15,
+    "category": "factual",
+    "prompt": "What are the main differences between GPTQ, AWQ, and bitsandbytes quantization methods? When would you choose each?"
+  },
+  {
+    "id": 16,
+    "category": "factual",
+    "prompt": "Describe the key hardware differences between the NVIDIA RTX 4090 and RTX 5090 (Blackwell), and why sm_120 requires a different PyTorch installation:"
+  },
+  {
+    "id": 17,
+    "category": "creative",
+    "prompt": "Write the opening paragraph of a science fiction story set aboard a generation ship where the AI navigator has been running for 200 years and begins to question its own memories:"
+  },
+  {
+    "id": 18,
+    "category": "creative",
+    "prompt": "Write a short poem (4-8 lines) about the philosophical implications of compressing human knowledge into quantized neural network weights:"
+  },
+  {
+    "id": 19,
+    "category": "creative",
+    "prompt": "Write a dialogue between a software engineer and a 4-bit quantized version of a 70B language model, where the model explains what it feels like to lose precision:"
+  },
+  {
+    "id": 20,
+    "category": "creative",
+    "prompt": "Write the product description for an imaginary neural processing unit designed specifically for running quantized LLMs at the edge, targeting IoT devices with 512MB of RAM:"
+  }
+]

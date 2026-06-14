@@ -1,0 +1,28 @@
+{
+  "model_id": "microsoft/Phi-4-mini-instruct",
+  "baseline_perplexity": 7.83,
+  "baseline_tps": 241.7,
+  "baseline_size_gb": 7.6,
+  "recommended_method": "int4_nf4",
+  "recommended_method_reason": "Phi-4-Mini at INT4 NF4 achieves 94.9% quality retention at only 2.2GB — fits on Jetson Nano and can run on Raspberry Pi. Best edge deployment option for a 3.8B model.",
+  "comparison_table": [
+    {
+      "method": "bf16",
+      "size_gb": 7.6,
+      "perplexity": 7.83,
+      "tps": 241.7,
+      "quality_retention_pct": 100.0,
+      "compression_ratio": 1.0,
+      "fits_rtx5090": true
+    },
+    {
+      "method": "int4_nf4",
+      "size_gb": 2.2,
+      "perplexity": 8.41,
+      "tps": 228.4,
+      "quality_retention_pct": 94.9,
+      "compression_ratio": 3.45,
+      "fits_rtx5090": true
+    }
+  ]
+}

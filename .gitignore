@@ -1,0 +1,57 @@
+# Environment
+.env
+*.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Model weights and quantized outputs (large binary files)
+quantized/
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.pth
+hf_cache/
+
+# Benchmark results (keep sample_results/, ignore actual results)
+results/
+
+# Streamlit
+.streamlit/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+*.ipynb
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/

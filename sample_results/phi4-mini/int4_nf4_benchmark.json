@@ -1,0 +1,56 @@
+{
+  "model_id": "microsoft/Phi-4-mini-instruct",
+  "quantization_method": "int4_nf4",
+  "model_size_gb": 2.2,
+  "benchmarked_at": "2026-06-14T16:31:00+00:00",
+  "device": "cuda (NVIDIA RTX 5090)",
+  "perplexity": {
+    "mean_perplexity": 8.41,
+    "std_perplexity": 0.44,
+    "min_perplexity": 7.32,
+    "max_perplexity": 9.87,
+    "num_samples": 1000,
+    "dataset": "wikitext2_subset",
+    "duration_seconds": 121.6
+  },
+  "speed": {
+    "mean_tps": 228.4,
+    "std_tps": 7.1,
+    "min_tps": 211.3,
+    "max_tps": 242.7,
+    "mean_ttft_ms": 68.9,
+    "std_ttft_ms": 5.4,
+    "num_runs": 10,
+    "prompt_tokens": 24,
+    "max_new_tokens": 100,
+    "device": "cuda",
+    "duration_seconds": 57.3
+  },
+  "memory": {
+    "model_vram_gb": 2.1,
+    "peak_vram_gb": 2.7,
+    "available_vram_gb": 24.0,
+    "system_ram_gb": 3.8,
+    "fits_on_device": true,
+    "device_name": "NVIDIA RTX 5090"
+  },
+  "quality": {
+    "mean_quality_score": 8.64,
+    "std_quality_score": 0.63,
+    "num_prompts": 20,
+    "prompt_categories": {
+      "explanation": 8.8,
+      "coding": 8.6,
+      "reasoning": 8.7,
+      "factual": 8.8,
+      "creative": 8.3
+    },
+    "groq_comparison_score": 8.9,
+    "quality_retention_pct": 94.9,
+    "duration_seconds": 171.2
+  },
+  "compression_ratio": 3.45,
+  "quality_retention_pct": 94.9,
+  "overall_score": 86.2,
+  "recommended_for": ["RTX 4090", "RTX 5090", "Jetson AGX Orin", "Mac M1", "Mac M2", "Mac M3 Pro", "Jetson Nano"]
+}

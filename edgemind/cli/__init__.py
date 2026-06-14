@@ -1,0 +1,1 @@
+"""EdgeMind CLI package."""
